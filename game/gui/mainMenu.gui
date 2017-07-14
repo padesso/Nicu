@@ -1,0 +1,304 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(MainMenuGui) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiBitmapCtrl() {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "~/gui/images/nicu_background_cave.jpg";
+      wrap = "0";
+   };
+   new GuiBitmapButtonCtrl(startOnePlayerButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "624 184";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "runOnePlayerGame();";
+      hovertime = "1000";
+      text = "Play!";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/startButton";
+   };
+   new GuiBitmapButtonCtrl(creditsButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "144 544";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "showCredits();";
+      hovertime = "1000";
+      text = "Credits";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/creditsButton";
+   };
+   new GuiBitmapButtonCtrl(howtoPlayButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "312 544";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "showHowToPlay();";
+      hovertime = "1000";
+      text = "How to play";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/howToPlayButton";
+   };
+   new GuiBitmapButtonCtrl(quitButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "488 544";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "Quit();";
+      hovertime = "1000";
+      text = "Quit";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/quitButton";
+   };
+   new GuiBitmapButtonCtrl(easyButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "624 312";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "setDifficulty(2);";
+      hovertime = "1000";
+      text = "Easy";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/easyButton";
+   };
+   new GuiBitmapButtonCtrl(mediumButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "608 360";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "setDifficulty(4);";
+      hovertime = "1000";
+      text = "Medium";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/mediumButton";
+   };
+   new GuiBitmapButtonCtrl(hardButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "624 408";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "setDifficulty(6);";
+      hovertime = "1000";
+      text = "Hard";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/hardButton";
+   };
+   new GuiTextEditCtrl(textInputGui) {
+      canSaveDynamicFields = "0";
+      internalName = "textInputGui";
+      isContainer = "0";
+      Profile = "GuiTextEditProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "584 232";
+      Extent = "128 18";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      maxLength = "24";
+      historySize = "0";
+      password = "0";
+      tabComplete = "0";
+      sinkAllKeyEvents = "0";
+      password = "0";
+      passwordMask = "*";
+   };
+   new GuiBitmapButtonCtrl() {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "496 224";
+      Extent = "83 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Play!";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/name";
+   };
+   new GuiBitmapCtrl(difficultyIcon) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "736 312";
+      Extent = "32 32";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "~/gui/images/difficultyIcon.png";
+      wrap = "0";
+   };
+   new GuiBitmapCtrl(Title) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiTransparentProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "64 56";
+      Extent = "350 150";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      tooltipprofile = "GuiDefaultProfile";
+      hovertime = "1000";
+      bitmap = "~/gui/images/Title.png";
+      wrap = "0";
+   };
+};
+//--- OBJECT WRITE END ---
+
+
+function loadSettings()
+{
+   //get the last played player name from the file system
+   %settings = readSettings();
+   $playerName = getSubStr( %settings, 0, strstr(%settings, "|"));
+   
+   //get the last played difficulty from the file system
+   $difficulty = getSubStr( %settings, strstr(%settings, "|") + 1, 1);
+   
+   textInputGui.text = $playerName;
+   setDifficulty($difficulty);
+   
+}
+
+function setDifficulty(%dif)
+{
+   $difficulty = %dif;
+   
+   switch(%dif)
+   {
+      case 2:
+         difficultyIcon.Position = 735 SPC getWord(easyButton.Position, 1);
+      
+      case 4:
+         difficultyIcon.Position = 735 SPC getWord(mediumButton.Position, 1);
+       
+      case 6:
+         difficultyIcon.Position = 735 SPC getWord(hardButton.Position, 1);
+   }
+ 
+   //writeSettings($playerName, $difficulty);
+}
+
+function showCredits()
+{
+   Canvas.setContent(creditsGui);
+   schedule(5000, 0, closeCredits);
+}
+
+function showHowToPlay()
+{
+   Canvas.setContent(howToPlayGui);
+   schedule(5000, 0, closeHowToPlay);
+}
+
+function runOnePlayerGame()
+{
+   //TODO: check for null input
+   $playerName = textInputGui.getValue();
+   
+   $isTwoPlayer = false;
+   
+   writeSettings($playerName,$difficulty);   
+   
+   startGame( expandFilename("game/data/levels/mainGame.t2d") );
+}
+
+function runTwoPlayerGame()
+{
+   //TODO: check for null input
+   $playerName = textInputGui.getValue();
+   
+   $isTwoPlayer = true;
+   
+   writeSettings($playerName,$difficulty);   
+   
+   startGame( expandFilename("game/data/levels/twoPlayerGame.t2d") );
+}

@@ -1,0 +1,82 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(introAnimGui) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   
+   new GuiBackgroundCtrl(background) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      BackgroundImageMap = "BlackImageMap";
+    };
+
+   new GuiTheoraCtrl(MyVideo) {
+      class = "moviePlayer";
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      Position = "0 0";
+      Extent = "800 600";
+      MinExtent = "800 600";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      theoraFile = "~/gui/video/intro.ogg";
+      done = "0";
+      stopOnSleep = "1";
+      backgroundColor = "0 0 0 255";
+   };    
+      new GuiButtonBaseCtrl(mouseCatcher) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      Command = "showMainMenu();";
+    }; 
+};      
+//--- OBJECT WRITE END ---
+
+function playIntro()
+{
+   $introSched = schedule(10000, 0, "showMainMenu");
+}
+
+function MyVideo::onSleep(%this)
+{
+   //clean up the movie
+   MyVideo.stop();
+}
+
+function showMainMenu()
+{ 
+   cancel($introSched);
+   
+   Canvas.schedule(500, "setContent", "MainMenuGui");
+   loadSettings();
+}

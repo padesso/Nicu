@@ -1,0 +1,98 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(PauseGui) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiBitmapCtrl() {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "256 224";
+      Extent = "288 160";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      tooltipprofile = "GuiDefaultProfile";
+      hovertime = "1000";
+      bitmap = "~/gui/images/pauseBackground.jpg";
+      wrap = "0";
+   };
+   new GuiBitmapButtonCtrl(pauseYesButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "288 328";
+      Extent = "80 32";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "quitGame();";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/pauseYes";
+   };
+   new GuiBitmapButtonCtrl(pauseNoButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "432 328";
+      Extent = "80 32";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "hidePauseMenu();";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      bitmap = "~/gui/images/buttons/pauseNo";
+   };
+};
+//--- OBJECT WRITE END ---
+
+function togglePause()
+{
+   echo("toggling pause");  
+   
+   if($isPaused)
+   {   
+      hidePauseMenu();
+   }
+   else
+   {
+      Canvas.pushDialog(PauseGui); 
+      $isPaused = true;
+   }
+}
+
+function quitGame()
+{
+   Canvas.setContent(MainMenuGui);
+   textInputGui.setVisible(true);
+   
+   $isPaused = false;
+}
+
+function hidePauseMenu()
+{
+   Canvas.popDialog(PauseGui);
+   $isPaused = false;
+}
+   

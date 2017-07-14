@@ -1,0 +1,50 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(creditsGui) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiFadeinBitmapCtrl(creditsImage) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "~/gui/images/nicu_background_cave.jpg";
+      wrap = "0";
+      fadeinTime = "300";
+      waitTime = "10000";
+      fadeoutTime = "300";
+      done = "0";
+   };
+};
+//--- OBJECT WRITE END ---
+
+function creditsImage::click()
+{
+   Canvas.setContent(mainMenuGui); 
+}
+
+function closeCredits()
+{
+   Canvas.setContent(mainMenuGui);
+}
+
+function onMouseUp(%this)
+{
+   Canvas.setContent(mainMenuGui);
+}

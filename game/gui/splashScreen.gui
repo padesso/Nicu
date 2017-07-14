@@ -1,0 +1,124 @@
+//------------------------------------------------------------------------------
+// Torque Game Builder Adventure Kit
+// Copyright (C) Sickhead Games, LLC
+//------------------------------------------------------------------------------
+
+//--- OBJECT WRITE BEGIN ---
+
+%guiContent = new GuiControl(blankBackground) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   
+   new GuiBackgroundCtrl(background) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      BackgroundImageMap = "BlackImageMap";
+    };
+};
+
+new GuiFadeinBitmapCtrl(SplashScreenGui) {
+   profile = "GuiInputCtrlProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "~/gui/images/splash";
+   wrap = "0";
+   fadeinTime = "300";
+   waitTime   = "2000";
+   fadeoutTime = "300";
+};
+
+new GuiFadeinBitmapCtrl(SplashScreenGui2) {
+   profile = "GuiInputCtrlProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "~/gui/images/splash1";
+   wrap = "0";
+   fadeinTime = "300";
+   waitTime   = "4000";
+   fadeoutTime = "300";
+};
+//--- OBJECT WRITE END ---
+
+function showSplashScreen()
+{
+   SplashScreenGui.done = 0;
+   Canvas.setContent(SplashScreenGui);
+   schedule(100, 0, checkSplashScreenGui);
+}
+
+function SplashScreenGui::click()
+{
+   //closeSplashScreenGui();
+}
+
+function checkSplashScreenGui()
+{
+   if (SplashScreenGui.done)
+      closeSplashScreenGui();
+   else
+      schedule(100, 0, checkSplashScreenGui);
+}
+
+function closeSplashScreenGui()
+{
+   //showNextSplashScreen(); //Changed to call splashscreengui2
+   
+   Canvas.setContent(introAnimGui); 
+   playIntro(); 
+}
+
+function showNextSplashScreen()
+{
+   SplashScreenGui2.done = 0;
+   Canvas.setContent(SplashScreenGui2);
+   schedule(100, 0, checkSplashScreenGui2);
+}
+
+function SplashScreenGui2::click()
+{
+   closeSplashScreenGui2();
+}
+
+function checkSplashScreenGui2()
+{
+   if (SplashScreenGui2.done)
+      closeSplashScreenGui2();
+   else
+      schedule(100, 0, checkSplashScreenGui2);
+}
+
+function closeSplashScreenGui2()
+{
+  //show the intro animation    
+  Canvas.setContent(blankBackground);   
+  Canvas.schedule(150, "setContent", "introAnimGui"); 
+  Canvas.schedule(155, "playIntro"); 
+}

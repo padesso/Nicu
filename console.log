@@ -1,0 +1,174 @@
+//-------------------------- 6/30/2017 -- 08:19:41 -----
+Processor Init:
+   Intel (unknown, Pentium Pro/II/III family), ~3.40 Ghz
+     (timed at roughly 3.39 Ghz)
+   FPU detected
+   MMX detected
+   SSE detected
+ 
+Math Init:
+   Installing Standard C extensions
+   Installing Assembly extensions
+   Installing FPU extensions
+   Installing MMX extensions
+   Installing SSE extensions
+ 
+Input Init:
+   DirectInput enabled.
+
+Initializing chunk mappings...
+   o 'TEXT' maps to TextChunk
+   o 'SCHK' maps to UnknownChunk
+   o 'SCHK' maps to SimChunk
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/main.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/main.cs.
+ % - Initializing Common
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/preferences/defaultPrefs.cs.
+Reading Display Device information...
+   Primary Display Device Found:
+      Vendor Id: VEN_0000
+      Device Id: DEV_0000
+
+Using OpenGL rendering. Fullscreen: 0
+
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/xml.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/properties.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/common.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/audio.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/canvas.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/cursor.cs.
+Video Init:
+   Accelerated OpenGL display device detected.
+   Accelerated D3D device detected.
+   Voodoo 2 display device not detected.
+
+Activating the OpenGL display device...
+Activating the OpenGL display device...
+Setting screen mode to 800x600x32 (w)...
+Creating a new window...
+Acquiring a new device context...
+Pixel format set:
+  32 color bits, 24 depth bits, 8 stencil bits
+Creating a new rendering context...
+Making the new rendering context current...
+OpenGL driver information:
+  Vendor: NVIDIA Corporation
+  Renderer: GeForce 8400GS/PCIe/SSE2
+  Version: 3.3.0
+OpenGL Init: Enabled Extensions
+  ARB_multitexture (Max Texture Units: 4)
+  EXT_blend_color
+  EXT_blend_minmax
+  EXT_compiled_vertex_array
+  NV_vertex_array_range
+  EXT_texture_env_combine
+  EXT_packed_pixels
+  EXT_fog_coord
+  ARB_texture_compression
+  EXT_texture_compression_s3tc
+  (ARB|EXT)_texture_env_add
+  EXT_texture_filter_anisotropic (Max anisotropy: 16)
+  WGL_EXT_swap_control
+OpenGL Init: Disabled Extensions
+  EXT_paletted_texture
+  3DFX_texture_compression_FXT1
+
+Max Texture Size reported as: 8192
+OpenAL Driver Init:
+   Vendor: Creative Labs Inc.
+   Version: OpenAL 1.0
+   Renderer: Software
+   Extensions: EAX 2.0, EAX 3.0, EAX Unified, and EAX-AC3
+
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/profiles.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/cursors.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/messageBoxOk.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/messageBoxYesNo.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/messageBoxYesNoCancel.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/messageBoxOKCancel.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/messageBoxOKCancelDetailsDlg.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/messagePopup.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/options.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/remap.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/console.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/NetworkMenu.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/startServer.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/joinServer.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/waitingForServer.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/helpDlg.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/messageBox.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/help.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gui/chatGui.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/screenshot.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/metrics.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/Gui/FrameOverlayGui.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/scriptDoc.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/keybindings.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/options.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/levelManagement.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/projectManagement.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/projectResources.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/common/gameScripts/align.cs.
+
+Torque Game Builder (v1.7.4) initialized...
+ % Game Resources : FAILED Loading Resource Nicu
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/resources/particlesArt/resourceDatabase.cs.
+ % Game Resources : Loaded Resource particlesArt
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/managed/datablocks.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/managed/persistent.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/managed/brushes.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/datablocks.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/guiProfiles.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gui/mainScreen.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gui/credits.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gui/splashScreen.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gui/mainMenu.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gui/howToPlay.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gui/pauseGui.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gui/introAnim.gui.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/game.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/timer.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/stack.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/fillGrid.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/fillButton.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/button.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/particleScore.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/audio.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/scoreboard.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/userSettings.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/orbitSelection.cs.
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/gameScripts/fade.cs.
+TheoraTexture - Loading file 'game/gui/video/intro.ogg'
+   Ogg logical stream 5caf is Theora 800x608 25.00 fps video
+      - Frame content is 800x600 with offset (0,8).
+Succesfully opened FileObject for write
+Succesfully wrote to and closed FileObject
+Activating DirectInput...
+DirectInput joystick failed to enable!
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/data/levels/mainGame.t2d.
+Starting game with seed: 916768
+Player 0 clicked on color: greenPieceImageMap
+Player 0 clicked on color: bluePieceImageMap
+Player 0 clicked on color: blackPieceImageMap
+Player 0 clicked on color: yellowPieceImageMap
+Player 0 clicked on color: redPieceImageMap
+Player 0 clicked on color: greenPieceImageMap
+Player 0 clicked on color: yellowPieceImageMap
+Player 0 clicked on color: orangePieceImageMap
+Player 0 clicked on color: blackPieceImageMap
+Player 0 clicked on color: yellowPieceImageMap
+Player 0 clicked on color: redPieceImageMap
+Loading compiled script M:/Pat's Greatest Hits/Nicu/Nicu/game/data/levels/playAgainMenu.t2d.
+POST /FillBattle/FillBattle.php HTTP/1.1
+Host: www.dreambuildrepeat.com:80
+User-Agent: Torque/1.0 
+Accept: */*
+Content-Length: 53
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+
+&name=Victor&score=62&clicks=11&time=01:53&bigBurst=8
+DirectInput deactivated.
+Shutting down the OpenGL display device...
+Making the GL rendering context not current...
+Deleting the GL rendering context...
+Releasing the device context...
